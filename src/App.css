@@ -1,0 +1,131 @@
+.tasklist-container {
+  width: 600px;
+  padding: 20px;
+  box-shadow: 2px 2px 4px #282c34;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tasklist {
+  list-style: none;
+  width : 90%;
+  margin : auto;
+  padding : 0;
+}
+
+.tasklist .task {
+  display: flex;
+  padding: 10px;
+  background: lightblue;
+  align-items: center;
+}
+
+.tasklist .task:nth-child(2n) {
+  display: flex;
+  padding: 10px;
+  background: lightsalmon;
+}
+
+.task-form {
+  margin : 20px auto;
+}
+
+#task-input {
+  padding : 10px 20px 10px 5px;
+  border-radius: 15px 0 0 15px;
+  border-right: 0;
+}
+
+#task-input:focus {
+  outline: 0;
+}
+
+.add-button {
+  background : lightblue;
+  padding : 10px 20px 10px 5px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+.add-button:active {
+  background : lightsalmon;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.done {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(194, 194, 194);
+  color :rgb(105, 105, 105)
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 7px;
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background: grey;
+  position: relative;
+}
+
+.button-container {
+  width : 100%;
+  display : flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hidden {
+  display : none;
+}
+
+.delete, .delete-all {
+  align-self: center;
+  justify-self: center;
+  border : 0;
+  outline : 0;
+  background: grey;
+  cursor: pointer;
+  width : 30px;
+  height : 30px;
+  color : white;
+  font-size: 1.6em;
+  padding : 0;
+  font-weight: 400;
+  border-radius: 50%;
+  transform: rotateZ(45deg);
+}
+
+.delete-all {
+  background: rgb(255, 62, 62);
+}
+
+.tools-container {
+  width : 100%;
+  height : 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools-container div {
+  display: flex;
+  align-items: center;
+}
+
+
